@@ -32,5 +32,6 @@ fisher install dynamo-make-color/fish-caran
 ## :pencil:&nbsp; Features
 - Completion of:
     - `asdf`
+    - `bat`
 
 ## :scroll:&nbsp; Cheatsheet
