@@ -33,5 +33,6 @@ fisher install dynamo-make-color/fish-caran
 - Completion of:
     - `asdf`
     - `bat`
+    - `docker-compose`
 
 ## :scroll:&nbsp; Cheatsheet
