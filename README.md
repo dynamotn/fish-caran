@@ -55,6 +55,17 @@ fisher install dynamo-make-color/fish-caran
 
 ## :scroll:&nbsp; Cheatsheet
 
+#### chezmoi short command
+| Alias | Full command |
+|-------|--------------|
+| cz    | `chezmoi`    |
+| cza   | `cz add`     |
+| czA   | `cz apply`   |
+| cze   | `cz encrypt` |
+| czd   | `cz decrypt` |
+| czD   | `cz diff`    |
+| czu   | `cz update`  |
+
 #### docker short command
 | Alias | Full command                       |
 |-------|------------------------------------|
