@@ -42,8 +42,11 @@ fisher install dynamo-make-color/fish-caran
     - `rg`
 - Command alias for:
     - `git`
+    - `xsel`
 
 ## :scroll:&nbsp; Cheatsheet
+
+#### Git short command
 | Alias | Full command                                       |
 |-------|----------------------------------------------------|
 | g     | `git`                                              |
@@ -99,3 +102,9 @@ fisher install dynamo-make-color/fish-caran
 | gt    | `git tag`                                          |
 | gv    | `git mv`                                           |
 | gw    | `git whatchanged`                                  |
+
+#### Other command
+| Alias | Description                           |
+|-------|---------------------------------------|
+| copy  | Copy command output to clipboard      |
+| paste | Paste clipboard to command line input |
