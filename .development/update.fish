@@ -8,3 +8,4 @@ curl -SL https://raw.githubusercontent.com/ogham/exa/master/completions/fish/exa
 # TODO: fd
 # TODO: hyperfine
 command -v kubectl && kubectl completion fish > completions/kubectl.fish
+# TODO: rg
