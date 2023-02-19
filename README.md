@@ -37,5 +37,6 @@ fisher install dynamo-make-color/fish-caran
     - `dog`
     - `exa`
     - `fd`
+    - `hyperfine`
 
 ## :scroll:&nbsp; Cheatsheet

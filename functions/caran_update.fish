@@ -5,4 +5,5 @@ function caran_update
   # TODO: docker-compose
   curl -SL https://raw.githubusercontent.com/ogham/exa/master/completions/fish/exa.fish -o completions/exa.fish
   # TODO: fd
+  # TODO: hyperfine
 end
