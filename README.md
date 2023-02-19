@@ -31,6 +31,7 @@ fisher install dynamo-make-color/fish-caran
 
 ## :pencil:&nbsp; Features
 - `grc` wrapper to colorise output of some commands
+- `ssh` wrapper to split config directory of ssh
 - Completion of:
     - `asdf`
     - `bat`
@@ -45,6 +46,7 @@ fisher install dynamo-make-color/fish-caran
     - `docker`
     - `git`
     - `kubectl`
+    - `ssh`
     - `xsel`
     - other stuff
 
@@ -149,8 +151,12 @@ fisher install dynamo-make-color/fish-caran
 | hd    | `helm delete`               |
 
 #### Other command
-| Alias   | Description                                        |
-|---------|----------------------------------------------------|
-| copy    | Copy command output to clipboard                   |
-| paste   | Paste clipboard to command line input              |
-| weather | Show current weather of current network's location |
+| Alias         | Description                                                                                               |
+|---------------|-----------------------------------------------------------------------------------------------------------|
+| copy          | Copy command output to clipboard                                                                          |
+| paste         | Paste clipboard to command line input                                                                     |
+| weather       | Show current weather of current network's location                                                        |
+| remote_tunnel | Forward port from SSH machine to local, with `-r`, `-l` argument is port of SSH machine and local machine |
+| local_tunnel  | Forward port from local to SSH machine, with `-r`, `-l` argument is port of SSH machine and local machine |
+| sock_proxy    | Create socks proxy via SSH machine, with `-p` is port of socks proxy in local                             |
+| ssht          | SSH to machine and run tmux on it, with `-s` argument is session name of tmux                             |
