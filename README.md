@@ -43,6 +43,7 @@ fisher install dynamo-make-color/fish-caran
 - Command alias for:
     - `docker`
     - `git`
+    - `kubectl`
     - `xsel`
     - other stuff
 
@@ -128,6 +129,23 @@ fisher install dynamo-make-color/fish-caran
 | gt    | `git tag`                                          |
 | gv    | `git mv`                                           |
 | gw    | `git whatchanged`                                  |
+
+#### k8s short command
+| Alias | Full command                |
+|-------|-----------------------------|
+| k     | `kubectl`                   |
+| ka    | `kubectl apply -f`          |
+| kd    | `kubectl delete`            |
+| kdc   | `kubectl describe`          |
+| ke    | `kubectl edit`              |
+| kg    | `kubectl get`               |
+| kk    | `kubectl apply -k`          |
+| kl    | `kubectl logs`              |
+| klf   | `kubectl logs -f --tail 50` |
+| kx    | `kubectl exec -it`          |
+| h     | `helm`                      |
+| hu    | `helm upgrade`              |
+| hd    | `helm delete`               |
 
 #### Other command
 | Alias   | Description                                        |
