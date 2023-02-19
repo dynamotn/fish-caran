@@ -38,5 +38,6 @@ fisher install dynamo-make-color/fish-caran
     - `exa`
     - `fd`
     - `hyperfine`
+    - `kubectl`
 
 ## :scroll:&nbsp; Cheatsheet

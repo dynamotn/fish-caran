@@ -7,3 +7,4 @@ curl -SL https://raw.githubusercontent.com/ogham/dog/master/completions/dog.fish
 curl -SL https://raw.githubusercontent.com/ogham/exa/master/completions/fish/exa.fish -o completions/exa.fish
 # TODO: fd
 # TODO: hyperfine
+command -v kubectl && kubectl completion fish > completions/kubectl.fish
