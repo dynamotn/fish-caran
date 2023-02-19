@@ -44,7 +44,7 @@ fisher install dynamo-make-color/fish-caran
     - `rg`
 - Command alias for:
     - `docker`
-    - `gcloud`
+    - `gcloud` with `fzf`
     - `git`
     - `kubectl`
     - `ssh`
@@ -188,6 +188,14 @@ fisher install dynamo-make-color/fish-caran
 | update_nix         | Update nix         |
 | install_pre_commit | Install pre-commit |
 | update_pre_commit  | Update pre-commit  |
+
+#### FZF integration
+##### gcloud
+| Alias | Description         |
+|-------|---------------------|
+| fGpc  | Change project      |
+| fGcis | SSH to GCE instance |
+| fGciS | Search GCE instance |
 
 #### Other command
 | Alias         | Description                                                                                               |
