@@ -44,6 +44,7 @@ fisher install dynamo-make-color/fish-caran
     - `rg`
 - Command alias for:
     - `docker`
+    - `gcloud`
     - `git`
     - `kubectl`
     - `ssh`
@@ -134,6 +135,19 @@ fisher install dynamo-make-color/fish-caran
 | gt    | `git tag`                                          |
 | gv    | `git mv`                                           |
 | gw    | `git whatchanged`                                  |
+
+#### gcloud short command
+| Alias | Full command                    |
+|-------|---------------------------------|
+| G     | `gcloud`                        |
+| Gc    | `gcloud compute`                |
+| Gci   | `gcloud compute instances`      |
+| Gcf   | `gcloud compute firewall-rules` |
+| Gk    | `gcloud container`              |
+| Gp    | `gcloud pubsub`                 |
+| Gs    | `gcloud sql`                    |
+| Gi    | `gcloud iam`                    |
+| Gl    | `gcloud logging`                |
 
 #### k8s short command
 | Alias | Full command                |
