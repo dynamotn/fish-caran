@@ -40,5 +40,62 @@ fisher install dynamo-make-color/fish-caran
     - `hyperfine`
     - `kubectl`
     - `rg`
+- Command alias for:
+    - `git`
 
 ## :scroll:&nbsp; Cheatsheet
+| Alias | Full command                                       |
+|-------|----------------------------------------------------|
+| g     | `git`                                              |
+| ga    | `git add`                                          |
+| gap   | `ga -p`                                            |
+| gai   | `ga -i`                                            |
+| gb    | `git branch`                                       |
+| gbl   | `git blame`                                        |
+| gc    | `git commit -v`                                    |
+| gca   | `gc --amend`                                       |
+| gcan  | `gc --amend --no-edit --reset-author`              |
+| gcl   | `git clean -df`                                    |
+| gco   | `git checkout`                                     |
+| gcp   | `git cherry-pick`                                  |
+| gd    | `git diff`                                         |
+| gdb   | `git branch -D`                                    |
+| gdc   | `gd --cached`                                      |
+| gf    | `git fetch --all -p`                               |
+| gg    | `git log --graph --pretty=format:...`              |
+| ggs   | `gg --stat`                                        |
+| gl    | `git pull`                                         |
+| gm    | `git merge --ff`                                   |
+| gmc   | `git merge --continue`                             |
+| gmt   | `git mergetool`                                    |
+| gn    | `git clone --recursive`                            |
+| gnb   | `git checkout -b`                                  |
+| gp    | `git push`                                         |
+| gpo   | `gp -u origin`                                     |
+| gpot  | `gp -u origin --tags`                              |
+| gph   | `gp -u gh`                                         |
+| gpt   | `git push --tags`                                  |
+| grb   | `git rebase`                                       |
+| grbi  | `grb -i`                                           |
+| grbc  | `grb --continue`                                   |
+| grh   | `git reset --hard`                                 |
+| grH   | `git reset HEAD`                                   |
+| grm   | `git remote`                                       |
+| grma  | `grm add`                                          |
+| grmd  | `grm remove`                                       |
+| grmu  | `grm set-url`                                      |
+| grs   | `git reset --soft`                                 |
+| grv   | `git revert`                                       |
+| gR    | `cd (git rev-parse --show-toplevel)`               |
+| gs    | `git status`                                       |
+| gsh   | `git show`                                         |
+| gsm   | `git submodule`                                    |
+| gsn   | `git snapshot`                                     |
+| gst   | `git stash`                                        |
+| gstd  | `gst drop`                                         |
+| gstp  | `gst pop`                                          |
+| gsts  | `gst show --text`                                  |
+| gsu   | `git submodule update --init --recursive --remote` |
+| gt    | `git tag`                                          |
+| gv    | `git mv`                                           |
+| gw    | `git whatchanged`                                  |
