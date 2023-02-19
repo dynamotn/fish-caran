@@ -44,6 +44,7 @@ fisher install dynamo-make-color/fish-caran
     - `docker`
     - `git`
     - `xsel`
+    - other stuff
 
 ## :scroll:&nbsp; Cheatsheet
 
@@ -129,7 +130,8 @@ fisher install dynamo-make-color/fish-caran
 | gw    | `git whatchanged`                                  |
 
 #### Other command
-| Alias | Description                           |
-|-------|---------------------------------------|
-| copy  | Copy command output to clipboard      |
-| paste | Paste clipboard to command line input |
+| Alias   | Description                                        |
+|---------|----------------------------------------------------|
+| copy    | Copy command output to clipboard                   |
+| paste   | Paste clipboard to command line input              |
+| weather | Show current weather of current network's location |
