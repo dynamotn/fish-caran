@@ -50,3 +50,7 @@ alias gsu 'git submodule update --init --recursive --remote'
 alias gt 'git tag'
 alias gv 'git mv'
 alias gw 'git whatchanged'
+
+alias fgcs '__fzf_git_commit_search'
+
+set -q FZF_GIT_COMMIT_SEARCH_COMMAND; or set -U FZF_GIT_COMMIT_SEARCH_COMMAND "git log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"

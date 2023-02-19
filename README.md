@@ -197,6 +197,11 @@ fisher install dynamo-make-color/fish-caran
 | fGcis | SSH to GCE instance |
 | fGciS | Search GCE instance |
 
+##### git
+| Alias | Description                      |
+|-------|----------------------------------|
+| fgcs  | Fuzzy git commit search with fzf |
+
 #### Other command
 | Alias         | Description                                                                                               |
 |---------------|-----------------------------------------------------------------------------------------------------------|
