@@ -35,5 +35,6 @@ fisher install dynamo-make-color/fish-caran
     - `bat`
     - `docker-compose`
     - `dog`
+    - `exa`
 
 ## :scroll:&nbsp; Cheatsheet
