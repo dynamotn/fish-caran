@@ -30,6 +30,7 @@ fisher install dynamo-make-color/fish-caran
 ```
 
 ## :pencil:&nbsp; Features
+- `grc` wrapper to colorise output of some commands
 - Completion of:
     - `asdf`
     - `bat`
