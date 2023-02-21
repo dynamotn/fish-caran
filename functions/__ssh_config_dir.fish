@@ -8,5 +8,6 @@ function __ssh_config_dir
     echo "Your OpenSSH config was moved to new directory $ssh_config_dir" >&2
   end
 
-  cat $ssh_config_dir/**.config >> $ssh_config
+  rm $ssh_config
+  and cat $ssh_config_dir/**.config >> $ssh_config
 end
