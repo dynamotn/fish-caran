@@ -35,6 +35,7 @@ fisher install dynamo-make-color/fish-caran
 - Completion of:
     - `asdf`
     - `bat`
+    - `chezmoi`
     - `docker-compose`
     - `dog`
     - `exa`
@@ -44,6 +45,7 @@ fisher install dynamo-make-color/fish-caran
     - `rg`
 - Command alias for:
     - `docker`
+    - `chezmoi`
     - `gcloud` with `fzf`
     - `git`
     - `kubectl`
