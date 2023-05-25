@@ -32,7 +32,8 @@ function __kubectl_perform_completion
     __kubectl_debug "args: $args"
     __kubectl_debug "last arg: $lastArg"
 
-    set -l requestComp "$args[1] __complete $args[2..-1] $lastArg"
+    # Disable ActiveHelp which is not supported for fish shell
+    set -l requestComp "KUBECTL_ACTIVE_HELP=0 $args[1] __complete $args[2..-1] $lastArg"
 
     __kubectl_debug "Calling $requestComp"
     set -l results (eval $requestComp 2> /dev/null)
