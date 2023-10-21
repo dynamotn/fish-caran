@@ -1,9 +1,9 @@
 # Fish Shell Completions
-# Copy or symlink to $XDG_CONFIG_HOME/fish/completions/{{PROJECT_EXECUTABLE}}.fish
+# Copy or symlink to $XDG_CONFIG_HOME/fish/completions/bat.fish
 # ($XDG_CONFIG_HOME is usually set to ~/.config)
 
 # `bat` is `batcat` on Debian and Ubuntu
-set bat {{PROJECT_EXECUTABLE}}
+set bat bat
 
 # Helper functions:
 
@@ -162,6 +162,8 @@ complete -c $bat -l ignored-suffix -x -d "Ignore extension" -n __bat_no_excl_arg
 complete -c $bat -l italic-text -x -a "$italic_text_opts" -d "When to use italic text in the output" -n __bat_no_excl_args
 
 complete -c $bat -s l -l language -x -k -a "(__bat_complete_list_languages)" -d "Set the syntax highlighting language" -n __bat_no_excl_args
+
+complete -c $bat -l lessopen -d "Enable the $LESSOPEN preprocessor" -n __fish_is_first_arg
 
 complete -c $bat -s r -l line-range -x -d "Only print lines [M]:[N] (either optional)" -n __bat_no_excl_args
 
