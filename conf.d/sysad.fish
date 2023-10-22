@@ -15,12 +15,8 @@ alias open_ports 'netstat -tuplan'
 alias listen_ports 'netstat -tuplen'
 
 # IP
-function ip_info
-  curl -s "http://ipinfo.io/$argv"
-end
-
 function ip_wan
-  dig +short myip.opendns.com @resolver1.opendns.com
+  curl -s "http://ipinfo.io/$argv"
 end
 
 function ip_lan
