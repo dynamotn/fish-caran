@@ -1,4 +1,4 @@
-function __grc_setup
+function __caran_setup_grc
   set -l execs cat cvs df diff dig gcc g++ ls ifconfig make mount mtr netstat \
        ping ps tail traceroute wdiff blkid du dnf docker docker-compose \
        docker-machine env id ip iostat journalctl kubectl last lsattr lsblk \

@@ -1,5 +1,5 @@
 function ssh
-  __ssh_config_dir
+  __caran_ssh_config_dir
   and command ssh $argv
 end
 
@@ -21,13 +21,13 @@ function ssht
     echo "Must have hostname"
     return 1
   end
-    __tmux_rename_window $server
+    __caran_tmux_rename_window $server
   if test -z "$session"
     ssh -t $server tmux at; or ssh -t $server tmux new
   else
     ssh -t $server tmux at -t $session; or ssh -t $server tmux new -s $session
   end
-  __tmux_recover_name_window
+  __caran_tmux_recover_name_window
 end
 
 # Forward port from server to local
