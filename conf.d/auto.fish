@@ -3,7 +3,7 @@ function __autols --on-variable PWD --description 'Automatically ls when the $PW
   eza --icons -a 2>/dev/null; or ls -l
 end
 
-function __auto_expand_dot --on-variable fish_key_bindings
+function __auto_expand --on-variable fish_key_bindings
   set -l modes
   if test "$fish_key_bindings" = fish_default_key_bindings
     set modes default insert
@@ -12,10 +12,15 @@ function __auto_expand_dot --on-variable fish_key_bindings
   end
 
   bind --mode $modes[1] . __caran_expand_dot
+  bind --mode $modes[1] ! __caran_expand_bang
+  bind --mode $modes[1] '$' __caran_expand_lastarg
+  bind --mode $modes[2] --erase . ! '$'
 end
 
-function __remove_expand_dot --on-event caran_uninstall
-    bind -e .
+function __remove_expand --on-event caran_uninstall
+  bind -e .
+  bind -e !
+  bind -e '$'
 end
 
-__auto_expand_dot
+__auto_expand
