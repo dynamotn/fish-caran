@@ -7,7 +7,7 @@ alias czu 'cz update'
 
 function scz --wraps 'chezmoi' --description 'chezmoi with sudo'
   set -l dotfiles (realpath $(chezmoi execute-template '{{ .chezmoi.sourceDir }}')/..)
-  sudo chezmoi --destination / --source "$dotfiles/root" --working-tree "$dotfiles" --config ~/.config/chezmoi/chezmoi.yaml $argv
+  sudo chezmoi --destination / --source "$dotfiles/root" --working-tree "$dotfiles" --config ~/.config/chezmoi/root_chezmoi.yaml $argv
 end
 
 alias scza 'scz apply'
