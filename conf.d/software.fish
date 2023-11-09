@@ -124,8 +124,11 @@ function update_pre_commit
     return
   end
 
-  asdf global python system
+  if not type -q python
+    return
+  end
 
-  pip3 install --user pre-commit
-  asdf reshim python
+  asdf plugin-add pre-commit
+  asdf install pre-commit latest
+  asdf global pre-commit (asdf latest pre-commit)
 end
