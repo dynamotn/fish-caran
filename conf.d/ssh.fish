@@ -21,7 +21,7 @@ function ssht
     echo "Must have hostname"
     return 1
   end
-    __caran_tmux_rename_window $server
+    __caran_tmux_rename_window ssh-$server
   if test -z "$session"
     ssh -t $server tmux at; or ssh -t $server tmux new
   else
