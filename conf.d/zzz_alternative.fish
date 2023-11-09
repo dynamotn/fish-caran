@@ -1,3 +1,4 @@
+type -q grc; and __caran_setup_grc
 type -q bat; and alias cat 'bat'
 type -q eza; and alias ls 'eza'
 type -q gping; and alias ping 'gping'
