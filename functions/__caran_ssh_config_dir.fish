@@ -8,6 +8,6 @@ function __caran_ssh_config_dir
     echo "Your OpenSSH config was moved to new directory $ssh_config_dir" >&2
   end
 
-  rm $ssh_config
-  and cat $ssh_config_dir/**.config >> $ssh_config
+  [ -f $ssh_config ]; and rm $ssh_config
+  cat $ssh_config_dir/**.config >> $ssh_config
 end
