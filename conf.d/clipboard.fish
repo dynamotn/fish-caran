@@ -1,4 +1,4 @@
-if test $XDG_SESSION_TYPE = "wayland"
+if test "$XDG_SESSION_TYPE" = "wayland"
   alias copy 'wl-copy'
   alias paste 'wl-paste'
 else
