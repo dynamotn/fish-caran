@@ -1,3 +1,7 @@
+function is-symlink --argument file
+    test -L (echo $file | string replace -r '/$' '' --)
+end
+
 # Backup
 function backup --argument filename
   cp $filename $filename.bak
@@ -22,7 +26,6 @@ function copy
     command cp -i $argv
   end
 end
-alias cp 'copy'
 
 # Move with some extra behaviors
 function move
@@ -34,7 +37,6 @@ function move
   end
   command mv -i $argv
 end
-alias mv 'move'
 
 # Remove with some extra behaviors
 function remove
@@ -71,7 +73,6 @@ function remove
   # could be cool to allow remove .
   command rm $original_args
 end
-alias rm "remove"
 
 # Moves a directory's contents to the current directory and removes the empty directory
 function eat --argument dir
