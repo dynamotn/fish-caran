@@ -24,6 +24,19 @@ function update_awscli
   asdf global awscli (asdf latest awscli)
 end
 
+function install_az
+  type -q az; or update_awscli
+end
+
+function update_az
+  if not type -q asdf
+    return
+  end
+  asdf plugin-add azure-cli
+  asdf install azure-cli latest
+  asdf global azure-cli (asdf latest azure-cli)
+end
+
 function install_asdf
   if type -q asdf; or test -e $HOME/.asdf
     return
