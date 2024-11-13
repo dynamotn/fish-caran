@@ -4,6 +4,7 @@ alias czA 'cz add'
 alias cze 'cz edit'
 alias czd 'cz diff'
 alias czu 'cz update'
+alias czs 'cz status'
 
 function scz --wraps 'chezmoi' --description 'chezmoi with sudo'
   set -l dotfiles (realpath $(chezmoi execute-template '{{ .chezmoi.sourceDir }}')/..)
@@ -20,3 +21,4 @@ alias sczA 'scz add'
 alias scze 'scz edit'
 alias sczd 'scz diff'
 alias sczu 'scz update'
+alias sczs 'scz status'
