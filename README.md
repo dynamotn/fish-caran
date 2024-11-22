@@ -179,28 +179,11 @@ fisher install dynamo-make-color/fish-caran
 | hu    | `helm upgrade`              |
 | hd    | `helm delete`               |
 
-#### Installation command
+#### Nix command
 | Alias              | Description        |
 |--------------------|--------------------|
-| install_gcloud     | Install gcloud     |
-| update_gcloud      | Update gcloud      |
-| install_awscli     | Install awscli     |
-| update_awscli      | Update awscli      |
-| install_asdf       | Install asdf       |
-| update_asdf        | Update asdf        |
-| install_kubectl    | Install kubectl    |
-| update_kubectl     | Update kubectl     |
-| install_helm       | Install helm       |
-| update_helm        | Update helm        |
-| install_terraform  | Install terraform  |
-| update_terraform   | Update terraform   |
-| install_fzf        | Install fzf        |
-| update_fzf         | Update fzf         |
-| install_cht        | Install cht        |
 | install_nix        | Install nix        |
 | update_nix         | Update nix         |
-| install_pre_commit | Install pre-commit |
-| update_pre_commit  | Update pre-commit  |
 
 #### FZF integration
 ##### gcloud
