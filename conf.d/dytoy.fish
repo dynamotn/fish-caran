@@ -8,7 +8,7 @@ function dytoy_shell
   ~/.config/dytoy/shell.sh $argv
 end
 function dytoy_all
-  dytoy_os -e
-  dytoy_binary -e -n
-  dytoy_shell -e
+  dytoy_os $argv
+  dytoy_binary $argv
+  dytoy_shell $argv
 end
