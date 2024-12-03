@@ -23,5 +23,5 @@ function sudo --description "Execute command and alias as another user"
     set -- argv fish -C "$(functions --no-details -- $argv[1])" -c '$argv' -- $argv
   end
 
-  command sudo $sudo_args $argv
+  command sudo env "PATH=$PATH" $sudo_args $argv
 end
