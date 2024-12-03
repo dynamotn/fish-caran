@@ -1,4 +1,4 @@
-function ssht --description "Run tmux when ssh"
+function ssht --description "Run terminal workspace after ssh"
   getopts $argv | while read -l key value
     switch "$key"
       case _
@@ -15,11 +15,18 @@ function ssht --description "Run tmux when ssh"
     echo "Must have hostname"
     return 1
   end
-    __caran_tmux_rename_window ssh-$server
-  if test -z "$session"
-    ssh -t $server tmux at; or ssh -t $server tmux new
+
+  if ! test -z (ssh $server command -v zellij)
+    ssh $server zellij a $session
+    or ssh $server zellij
+  else if ! test -z (ssh $server command -v tmux)
+    if test -n "$session"
+      set attach_argv "-t $session"
+      set new_argv "-s $session"
+    end
+    ssh $server tmux at $attach_argv
+    or ssh $server tmux new $new_argv
   else
-    ssh -t $server tmux at -t $session; or ssh -t $server tmux new -s $session
+    ssh $server
   end
-  __caran_tmux_recover_name_window
 end
