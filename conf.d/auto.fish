@@ -5,7 +5,7 @@ end
 
 function __auto_expand --on-variable fish_key_bindings
   set -l modes
-  if test "$fish_key_bindings" = fish_default_key_bindings
+  if test "$fish_key_bindings" = "fish_default_key_bindings"
     set modes default insert
   else
     set modes insert default
