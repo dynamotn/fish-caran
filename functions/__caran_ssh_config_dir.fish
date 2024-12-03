@@ -1,3 +1,4 @@
+# Automatically merge ssh configs from subfolder
 function __caran_ssh_config_dir
   set -g ssh_config $HOME/.ssh/config
   set -g ssh_config_dir $HOME/.ssh/config.d

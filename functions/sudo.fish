@@ -1,4 +1,4 @@
-function sudo
+function sudo --description "Execute command and alias as another user"
   set sudo_args_with_value (LANG=C command sudo --help | string match -gr '^\s*(-\w),\s*(--\w[\w-]*)=')
   set sudo_args
 
