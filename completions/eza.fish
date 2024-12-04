@@ -9,7 +9,7 @@ complete -c eza -s G -l grid -d "Display entries in a grid"
 complete -c eza -s x -l across -d "Sort the grid across, rather than downwards"
 complete -c eza -s R -l recurse -d "Recurse into directories"
 complete -c eza -s T -l tree -d "Recurse into directories as a tree"
-complete -c eza -s X -l dereference -d "Dereference symbolic links when displaying information"
+complete -c eza -s X -l dereference -d "Dereference symbolic links when displaying file information"
 complete -c eza -s F -l classify -d "Display type indicator by file names"
 complete -c eza -l color \
     -l colour -d "When to use terminal colours" -x -a "
@@ -19,7 +19,17 @@ complete -c eza -l color \
     never\t'Never use colour'
 "
 complete -c eza -l color-scale \
-    -l colour-scale -d "Highlight levels of file sizes distinctly"
+    -l colour-scale -d "Highlight levels 'field' distinctly" -x -a "
+    all\t''
+    age\t''
+    size\t''
+"
+complete -c eza -l color-scale-mode \
+    -l colour-scale-mode \
+    -d "Use gradient or fixed colors in --color-scale" -x -a "
+    fixed\t'Highlight based on fixed colors'
+    gradient\t'Highlight based \'field\' in relation to other files'
+"
 complete -c eza -l icons -d "When to display icons" -x -a "
   always\t'Always display icons'
   auto\t'Display icons if standard output is a terminal'
@@ -28,10 +38,17 @@ complete -c eza -l icons -d "When to display icons" -x -a "
 "
 complete -c eza -l no-quotes -d "Don't quote file names with spaces"
 complete -c eza -l hyperlink -d "Display entries as hyperlinks"
+complete -c eza -l follow-symlinks -d "Drill down into symbolic links that point to directories"
+complete -c eza -l absolute -d "Display entries with their absolute path" -x -a "
+  on\t'Show absolute path for listed entries'
+  follow\t'Show absolute path with followed symlinks'
+  off\t'Do not show the absolute path'
+"
 complete -c eza -l smart-group -d "Only show group if it has a different name from owner"
 
 # Filtering and sorting options
 complete -c eza -l group-directories-first -d "Sort directories before other files"
+complete -c eza -l group-directories-last -d "Sort directories after other files"
 complete -c eza -l git-ignore -d "Ignore files mentioned in '.gitignore'"
 complete -c eza -s a -l all -d "Show hidden and 'dot' files. Use this twice to also show the '.' and '..' directories"
 complete -c eza -s A -l almost-all -d "Equivalent to --all; included for compatibility with `ls -A`"
@@ -66,6 +83,8 @@ complete -c eza -s s -l sort -d "Which field to sort by" -x -a "
 complete -c eza -s I -l ignore-glob -d "Ignore files that match these glob patterns" -r
 complete -c eza -s D -l only-dirs -d "List only directories"
 complete -c eza -s f -l only-files -d "List only files"
+complete -c eza -l show-symlinks -d "Explicitly show symbolic links (For use with --only-dirs | --only-files)"
+complete -c eza -l no-symlinks -d "Do not show symbolic links"
 
 # Long view options
 complete -c eza -s b -l binary -d "List file sizes with binary prefixes"
@@ -81,7 +100,6 @@ complete -c eza -s t -l time -d "Which timestamp field to list" -x -a "
     accessed\t'Display accessed time'
     created\t'Display created time'
 "
-complete -c eza -s X -l dereference -d "dereference symlinks for file information"
 complete -c eza -s m -l modified -d "Use the modified timestamp field"
 complete -c eza -s n -l numeric -d "List numeric user and group IDs."
 complete -c eza -l changed -d "Use the changed timestamp field"
@@ -93,13 +111,16 @@ complete -c eza -l time-style -d "How to format timestamps" -x -a "
     long-iso\t'Display longer ISO timestamps, up to the minute'
     full-iso\t'Display full ISO timestamps, up to the nanosecond'
     relative\t'Display relative timestamps'
+    +FORMAT\t'Use custom time style'
 "
+complete -c eza -l total-size -d "Show recursive directory size (unix only)"
 complete -c eza -l no-permissions -d "Suppress the permissions field"
 complete -c eza -s o -l octal-permissions -d "List each file's permission in octal format"
 complete -c eza -l no-filesize -d "Suppress the filesize field"
 complete -c eza -l no-user -d "Suppress the user field"
 complete -c eza -l no-time -d "Suppress the time field"
 complete -c eza -s M -l mounts -d "Show mount details"
+complete -c eza -l stdin -d "When piping to eza. Read file names from stdin"
 
 # Optional extras
 complete -c eza -l git -d "List each file's Git status, if tracked"
