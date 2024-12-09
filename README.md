@@ -73,8 +73,9 @@ fisher install dynamo-make-color/fish-caran
 |-------|------------------------------------|
 | d     | `docker`                           |
 | db    | `docker build`                     |
-| di    | `docker images`                    |
+| di    | `docker image`                     |
 | dl    | `docker logs -f --tail 50`         |
+| dph   | `docker push`                    |
 | dpl   | `docker pull`                      |
 | dps   | `docker ps`                        |
 | dr    | `docker run`                       |
