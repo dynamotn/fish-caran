@@ -30,19 +30,11 @@ fisher install dynamo-make-color/fish-caran
 ```
 
 ## :pencil:&nbsp; Features
-- `grc` wrapper to colorise output of some commands
+- `grc` wrapper to colourise output of some commands
 - `ssh` wrapper to split config directory of ssh
 - Completion of:
-    - `asdf`
-    - `bat`
-    - `chezmoi`
     - `docker-compose`
-    - `dog`
     - `exa`
-    - `fd`
-    - `hyperfine`
-    - `kubectl`
-    - `rg`
 - Command alias for:
     - `docker`
     - `chezmoi`
@@ -53,7 +45,7 @@ fisher install dynamo-make-color/fish-caran
     - `xsel`
     - some commands for sysad tools
     - some scripts to install tools (and toy)
-    - other stuff
+    - other stuffs
 
 ## :scroll:&nbsp; Cheatsheet
 
