@@ -5,10 +5,10 @@
 </div>
 
 <p align="center">
-	<a href="https://github.com/dynamo-make-color/fish-caran/stargazers">
-		<img alt="Stargazers" src="https://img.shields.io/github/stars/dynamo-make-color/fish-caran?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41"></a>
-	<a href="https://github.com/dynamo-make-color/fish-caran/issues">
-		<img alt="Issues" src="https://img.shields.io/github/issues/dynamo-make-color/fish-caran?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
+ <a href="https://github.com/dynamo-make-color/fish-caran/stargazers">
+  <img alt="Stargazers" src="https://img.shields.io/github/stars/dynamo-make-color/fish-caran?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41"></a>
+ <a href="https://github.com/dynamo-make-color/fish-caran/issues">
+  <img alt="Issues" src="https://img.shields.io/github/issues/dynamo-make-color/fish-caran?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
 </p>
 
 ## :book:&nbsp; Overview
@@ -25,31 +25,34 @@ Same with another fried dish, it's maybe not useful for you :).
 - [fisher](https://github.com/jorgebucaran/fisher)
 
 Install by following command:
+
 ```fish
 fisher install dynamo-make-color/fish-caran
 ```
 
 ## :pencil:&nbsp; Features
+
 - `grc` wrapper to colourise output of some commands
 - `ssh` wrapper to split config directory of ssh
 - Completion of:
-    - `docker-compose`
-    - `exa`
+  - `docker-compose`
+  - `exa`
 - Command alias for:
-    - `docker`
-    - `chezmoi`
-    - `gcloud` with `fzf`
-    - `git`
-    - `kubectl`
-    - `ssh`
-    - `xsel`
-    - some commands for sysad tools
-    - some scripts to install tools (and toy)
-    - other stuffs
+  - `docker`
+  - `chezmoi`
+  - `gcloud` with `fzf`
+  - `git`
+  - `kubectl`
+  - `ssh`
+  - `xsel`
+  - some commands for sysad tools
+  - some scripts to install tools (and toy)
+  - other stuffs
 
 ## :scroll:&nbsp; Cheatsheet
 
 #### chezmoi short command
+
 | Alias | Full command |
 |-------|--------------|
 | cz    | `chezmoi`    |
@@ -61,6 +64,7 @@ fisher install dynamo-make-color/fish-caran
 | czu   | `cz update`  |
 
 #### docker short command
+
 | Alias | Full command                       |
 |-------|------------------------------------|
 | d     | `docker`                           |
@@ -86,6 +90,7 @@ fisher install dynamo-make-color/fish-caran
 | cx    | `docker-compose exec`              |
 
 #### git short command
+
 | Alias | Full command                                       |
 |-------|----------------------------------------------------|
 | g     | `git`                                              |
@@ -103,7 +108,9 @@ fisher install dynamo-make-color/fish-caran
 | gd    | `git diff`                                         |
 | gdb   | `git branch -D`                                    |
 | gdc   | `gd --cached`                                      |
-| gf    | `git fetch --all -p`                               |
+| gf    | `git fetch`                                        |
+| gfu   | `gf --unshallow`                                   |
+| gfa   | `gf --all -p`                                      |
 | gg    | `git log --graph --pretty=format:...`              |
 | ggs   | `gg --stat`                                        |
 | gl    | `git pull`                                         |
@@ -143,6 +150,7 @@ fisher install dynamo-make-color/fish-caran
 | gw    | `git whatchanged`                                  |
 
 #### gcloud short command
+
 | Alias | Full command                    |
 |-------|---------------------------------|
 | G     | `gcloud`                        |
@@ -156,6 +164,7 @@ fisher install dynamo-make-color/fish-caran
 | Gl    | `gcloud logging`                |
 
 #### k8s short command
+
 | Alias | Full command                |
 |-------|-----------------------------|
 | k     | `kubectl`                   |
@@ -173,13 +182,16 @@ fisher install dynamo-make-color/fish-caran
 | hd    | `helm delete`               |
 
 #### Nix command
+
 | Alias              | Description        |
 |--------------------|--------------------|
 | install_nix        | Install nix        |
 | update_nix         | Update nix         |
 
 #### FZF integration
+
 ##### gcloud
+
 | Alias | Description         |
 |-------|---------------------|
 | fGpc  | Change project      |
@@ -187,11 +199,13 @@ fisher install dynamo-make-color/fish-caran
 | fGciS | Search GCE instance |
 
 ##### git
+
 | Alias | Description                      |
 |-------|----------------------------------|
 | fgcs  | Fuzzy git commit search with fzf |
 
 #### Other command
+
 | Alias         | Description                                                                                               |
 |---------------|-----------------------------------------------------------------------------------------------------------|
 | copy          | Copy command output to clipboard                                                                          |
