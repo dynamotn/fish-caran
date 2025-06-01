@@ -20,7 +20,7 @@ function sudo --description "Execute command and alias as another user"
   end
 
   if functions -q -- $argv[1]
-    set -- argv fish -C "$(functions --no-details -- $argv[1])" -c '$argv' -- $argv
+    set -- argv fish -C (functions --no-details -- $argv[1]) -c '$argv' -- $argv
   end
 
   command sudo -E $sudo_args $argv
