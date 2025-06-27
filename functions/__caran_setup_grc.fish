@@ -12,6 +12,7 @@ function __caran_setup_grc
 
     for executable in $execs
         if type -q $executable
+            # @fish-lsp-disable 4004
             function $executable --inherit-variable executable --wraps=$executable
                 if isatty 1
                     set -l optionsvariable "grcplugin_"$executable

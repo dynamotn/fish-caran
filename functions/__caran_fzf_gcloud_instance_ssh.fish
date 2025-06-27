@@ -7,7 +7,15 @@ function __caran_fzf_gcloud_instance_ssh -d "SSH to Gcloud instance"
 
     set -l instance (echo $select | awk '{ print $1 }')
     set -l zone (echo $select | awk '{ print $2 }')
-    __caran_tmux_rename_window $instance
-    gcloud compute ssh --zone "$zone" "$instance" -- tmux
-    __caran_tmux_recover_name_window
+
+    __caran_terminal_workspace_rename_window ssh-$instance
+    set -l ssh_command (string unescape "gcloud compute ssh --zone '$zone' '$instance' --")
+    if ! test -z (eval "$ssh_command command -v zellij")
+        eval "$ssh_command zellij"
+    else if ! test -z (eval "$ssh_command command -v tmux")
+        eval "$ssh_command tmux"
+    else
+        eval "$ssh_command"
+    end
+    __caran_terminal_workspace_recover_name_window
 end

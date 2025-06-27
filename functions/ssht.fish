@@ -16,10 +16,10 @@ function ssht --description "Run terminal workspace after ssh"
         return 1
     end
 
-    if ! test -z (ssh $server command -v zellij)
+    if ! test -z "$(ssh $server command -v zellij)"
         ssh $server zellij a $session
         or ssh $server zellij
-    else if ! test -z (ssh $server command -v tmux)
+    else if ! test -z "$(ssh $server command -v tmux)"
         if test -n "$session"
             set attach_argv "-t $session"
             set new_argv "-s $session"
