@@ -1,4 +1,4 @@
-alias cz 'chezmoi'
+alias cz chezmoi
 alias cza 'cz apply'
 alias czA 'cz add'
 alias czAe 'cz add --encrypt'

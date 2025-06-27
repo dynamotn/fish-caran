@@ -1,4 +1,4 @@
-alias k 'kubectl'
+alias k kubectl
 alias ka 'kubectl apply -f'
 alias kc 'kubectl create'
 alias kccc 'kubectl config current-context'
@@ -18,8 +18,8 @@ alias ksc 'kubectl scale'
 alias kr 'kubectl rollout'
 alias kx 'kubectl exec -it'
 
-alias h 'helm'
-alias hd 'helm-docs'
+alias h helm
+alias hd helm-docs
 alias hdel 'helm delete'
 alias hdu 'helm dependency update'
 alias hg 'helm get values'

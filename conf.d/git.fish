@@ -1,4 +1,4 @@
-alias g 'git'
+alias g git
 alias ga 'git add'
 alias gap 'ga -p'
 alias gai 'ga -i'
@@ -57,6 +57,6 @@ alias gt 'git tag'
 alias gv 'git mv'
 alias gw 'git whatchanged'
 
-alias fgcs '__caran_fzf_git_commit_search'
+alias fgcs __caran_fzf_git_commit_search
 
 set -q FZF_GIT_COMMIT_SEARCH_COMMAND; or set -U FZF_GIT_COMMIT_SEARCH_COMMAND "git log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"

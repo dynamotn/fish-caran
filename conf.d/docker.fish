@@ -1,4 +1,4 @@
-alias d 'docker'
+alias d docker
 alias db 'docker build'
 alias di 'docker image'
 alias dl 'docker logs -f --tail 50'
@@ -13,7 +13,7 @@ alias dsp 'docker system prune'
 alias dw 'docker inspect'
 alias dx 'docker exec -it'
 
-alias c 'docker-compose'
+alias c docker-compose
 alias cb 'docker-compose build'
 alias cl 'docker-compose logs -f --tail 50'
 alias cpl 'docker-compose pull'
