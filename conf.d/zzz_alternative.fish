@@ -9,3 +9,6 @@ type -q dust; and alias du dust
 type -q duf; and alias df duf
 type -q curlie; and alias curl curlie
 type -q q; and alias dig q
+type -q ov; and alias less ov; and alias more ov
+type -q z; and alias cd z
+type -q btop; and alias htop btop
