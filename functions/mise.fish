@@ -24,7 +24,7 @@ function mise
             end
         case '*'
             if type -q termux-setup-storage
-                proot -b "$PREFIX/etc/resolv.conf:/etc/resolv.conf" -b "$PREFIX/etc/tls:/etc/ssl" mise "$command" $argv
+                PATH=$HOME/.local/bin:$PATH proot -b "$PREFIX/etc/resolv.conf:/etc/resolv.conf" -b "$PREFIX/etc/tls:/etc/ssl" mise "$command" $argv
             else
                 command mise "$command" $argv
             end
