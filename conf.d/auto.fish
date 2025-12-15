@@ -1,6 +1,6 @@
 status --is-interactive || exit
 function __auto_ls --on-variable PWD --description 'Automatically ls when the $PWD changes.'
-    eza --icons -la 2>/dev/null; or ls -l
+    eza --icons -la@ 2>/dev/null; or ls -laZ
 end
 
 function __auto_expand --on-variable fish_key_bindings
