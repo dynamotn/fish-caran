@@ -26,7 +26,7 @@ function __caran_mise_env_eval_2 --on-event fish_preexec --description 'Update m
     end
 end
 
-__caran_mise_env_eval
+__caran_mise_env_eval 2>/dev/null; true
 
 if functions -q fish_command_not_found; and not functions -q __caran_mise_fish_command_not_found
     functions -e __caran_mise_fish_command_not_found
